@@ -1,54 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'DotGothic16', sans-serif;
-    letter-spacing: 2px;
-    color: #2ad68c;
-    font-size: 28px;
-    animation: oo 6s infinite normal;
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 body {
-    padding: 2%;
-    background: rgb(0,10,7);
-    background: linear-gradient(90deg, rgba(0,10,7,1) 0%, rgba(0,15,7,1) 24%, rgba(3,17,5,1) 71%, rgba(0,8,2,1) 100%);
-    overflow: hidden;
+  padding: 2%;
+  background: rgb(0, 10, 7);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 10, 7, 1) 0%,
+    rgba(0, 15, 7, 1) 24%,
+    rgba(3, 17, 5, 1) 71%,
+    rgba(0, 8, 2, 1) 100%
+  );
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
-.layer1 {
-    opacity: .8;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: rgb(0,6,4);
-    background: linear-gradient(90deg, rgba(0,6,4,1) 0%, rgba(0,8,1,1) 47%, rgba(0,8,2,1) 100%);
-    z-index: 1;
+textarea {
+  padding: 2%;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  width: 100%;
+  height: 90vh;
+  display: block;
+  position: relative;
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 2px;
+  color: #2ad68c;
+  font-size: 28px;
+  animation: greentext .5s infinite normal;
 }
 
-textarea { 
-    background-color:  transparent;
-    resize: none;
-    border: none;
-    width: 100vw;
-    height: 100vh;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-@keyframes oo {
-    0% {
-        text-shadow: 1px 0 12px #2ad68c, 0 0 2px #2ad68c;
-    }
-    25% {
-        text-shadow: 0 1px 15px #2ad68c, 0 0 3px #2ad68c;
-    }
-    50% {
-        text-shadow: 1px 0 18px #2ad68c, 0 0 2px #2ad68c;
-    }
-    75% {
-        text-shadow: 0 0 15px #2ad68c, 0 0 1px #2ad68c;
-    }
-    100% {
-        text-shadow: 0 1px 13px #2ad68c, 0 0 2px #2ad68c;
-    }
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+@keyframes greentext {
+  0% {
+    text-shadow: 1px 0 12px #2ad68c, 0 0 2px #2ad68c;
+  }
+  25% {
+    text-shadow: 0 1px 15px #2ad68c, 0 0 3px #2ad68c;
+  }
+  50% {
+    text-shadow: 1px 0 18px #2ad68c, 0 0 2px #2ad68c;
+  }
+  75% {
+    text-shadow: 0 0 15px #2ad68c, 0 0 1px #2ad68c;
+  }
+  100% {
+    text-shadow: 0 1px 13px #2ad68c, 0 0 2px #2ad68c;
+  }
 }
